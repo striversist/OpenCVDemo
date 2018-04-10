@@ -115,10 +115,13 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>G:\Programs\opencv\build\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>G:\Programs\opencv\build\x64\vc14\lib;G:\Programs\opencv\build\x64\vc14\bin\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world330.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -127,6 +130,7 @@
     <ClCompile Include="Features.cpp" />
     <ClCompile Include="hello.cpp" />
     <ClCompile Include="OpticalFlowPyrLK.cpp" />
+    <ClCompile Include="planar_tracking\planar_tracking.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
