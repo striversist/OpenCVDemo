@@ -56,4 +56,10 @@ vector<Point2f> Points(vector<KeyPoint> keypoints)
     }
     return res;
 }
+
+Mat KeyPoint2Mat(const KeyPoint& kp) 
+{
+	return (Mat_<float>(3, 1) << kp.pt.x, kp.pt.y, 1);
+}
+
 #endif // UTILS_H

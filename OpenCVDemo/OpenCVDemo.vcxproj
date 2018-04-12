@@ -132,6 +132,10 @@
     <ClCompile Include="OpticalFlowPyrLK.cpp" />
     <ClCompile Include="planar_tracking\planar_tracking.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="planar_tracking\stats.h" />
+    <ClInclude Include="planar_tracking\utils.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
